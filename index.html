@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Subhajit's Projects — QR Maker (Free Online QR Generator)</title>
-  <meta name="description" content="QR Maker — free online QR code generator. Create URL, WiFi, phone, email & text QR codes and download PNG or SVG. Safe, fast, no signup." />
+  <title>QR Maker — Free Online QR Code Generator | Subhajit's Projects</title>
+  <meta name="description" content="QR Maker — free, privacy-first QR code generator. Create QR codes for URLs, WiFi, phone numbers, email or text and download PNG/SVG instantly." />
   <link rel="canonical" href="https://subhajit054.github.io/" />
   <meta name="robots" content="index,follow" />
 
@@ -14,21 +14,34 @@
   <meta property="og:url" content="https://subhajit054.github.io/" />
   <meta property="og:type" content="website" />
 
-  <!-- AdSense verification / auto-ads (already provided) -->
+  <!-- AdSense verification / auto-ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7253912036541448"
      crossorigin="anonymous"></script>
 
+  <!-- Structured data for site -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"QR Maker — Subhajit054",
+    "url":"https://subhajit054.github.io/",
+    "description":"Free online QR code generator. Create and download QR codes for URLs, WiFi, phone, email and text."
+  }
+  </script>
+
   <style>
-    body{font-family:Inter,system-ui,Arial,Helvetica;margin:0;color:#0f172a;background:#f8fafc}
-    header{background:#fff;padding:18px;border-bottom:1px solid #e6eef8;display:flex;align-items:center;justify-content:space-between}
+    :root{--bg:#f7fbff;--card:#fff;--accent:#0ea5a3;--muted:#6b7280}
+    body{font-family:Inter,system-ui,Arial,Helvetica;margin:0;color:#0f172a;background:var(--bg);-webkit-font-smoothing:antialiased}
+    header{background:var(--card);padding:16px;border-bottom:1px solid #e6eef8;display:flex;align-items:center;justify-content:space-between}
     .wrap{max-width:980px;margin:28px auto;padding:20px}
-    nav a{margin-right:14px;color:#0369a1;text-decoration:none;font-weight:600}
-    .hero{background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,.04)}
-    .ad-slot{background:#f1f5f9;border:1px dashed #c7d2fe;padding:12px;border-radius:8px;text-align:center;color:#4c51bf;margin:14px 0}
+    nav a{margin-right:12px;color:#0369a1;text-decoration:none;font-weight:600}
+    .hero{background:var(--card);padding:22px;border-radius:12px;box-shadow:0 8px 24px rgba(2,6,23,.04)}
+    .ad-slot{background:#f1f5f9;border:1px dashed #c7d2fe;padding:12px;border-radius:8px;text-align:center;color:#4c51bf;margin:18px 0}
     .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
-    .card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,.03)}
-    footer{padding:18px;text-align:center;color:#6b7280;font-size:14px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,.03)}
+    footer{padding:18px;text-align:center;color:var(--muted);font-size:14px;margin-top:18px}
     h1{margin:0 0 8px 0}
+    .btn{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
     @media(max-width:880px){.grid{grid-template-columns:1fr}}
   </style>
 </head>
@@ -38,44 +51,45 @@
       <div style="font-weight:700;font-size:18px">Subhajit's Projects</div>
       <nav>
         <a href="/">Home</a>
-        <a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/">QR Maker</a>
-        <a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/how-to-create-qr.html">How to create QR</a>
-        <a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/wifi-qr-generator.html">WiFi QR</a>
+        <a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/">Open QR Maker</a>
+        <a href="/about.html">About</a>
+        <a href="/privacy.html">Privacy</a>
       </nav>
-
     </div>
-    <div style="font-size:13px;color:#6b7280">Built by Subhajit Sen</div>
+    <div style="font-size:13px;color:var(--muted)">Built by Subhajit Sen</div>
   </header>
 
   <div class="wrap">
     <div class="grid">
       <main>
         <div class="hero card">
-          <h1>QR Maker — Free Online QR Generator</h1>
-          <p style="color:#374151">Create fast, reliable QR codes for websites, text, phone numbers, email, and WiFi. QR Maker runs completely in your browser — no uploads, no signups, and you can download PNG or SVG instantly.</p>
+          <h1>QR Maker — Free Online QR Code Generator</h1>
+          <p style="color:#374151">QR Maker is a privacy-first web tool that lets you create QR codes instantly in your browser. No uploading, no accounts — everything runs client-side so your data never leaves your device.</p>
 
-          <h2 style="margin-top:16px">Open the tool</h2>
-          <p><a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" style="display:inline-block;padding:10px 14px;background:#0ea5a3;color:#fff;border-radius:8px;text-decoration:none">Open QR Maker</a></p>
+          <p><a class="btn" href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/">Open QR Maker — Generate Now</a></p>
 
-          <div style="margin-top:14px">
-            <h3>How it helps</h3>
-            <p>QR codes are used everywhere: menus, business cards, product packaging, event tickets and quick sharing. QR Maker focuses on simplicity: pick a type, paste your data, customize color/size, and download. For WiFi sharing use <code>SSID|WPA|password</code> format and guests can connect by scanning the QR.</p>
+          <h2 style="margin-top:18px">What you can do</h2>
+          <p>Use QR Maker to generate QR codes for:</p>
+          <ul>
+            <li>Web URLs (https://...), short links and landing pages</li>
+            <li>WiFi credentials (SSID/WPA/password) — share with guests</li>
+            <li>Phone numbers, SMS messages, email templates and plain text</li>
+            <li>Download QR as PNG or scalable SVG for printing</li>
+          </ul>
 
-            <h3 style="margin-top:12px">Privacy & Security</h3>
-            <p>All QR generation happens client-side in your browser; no data is sent to our servers. We never store or sell your data. For more details see the <a href="/privacy.html">Privacy Policy</a>.</p>
+          <div class="ad-slot" aria-hidden="true">Top banner ad placeholder — replace with AdSense unit after approval</div>
 
-            <div class="ad-slot" aria-hidden="true">Top banner ad placeholder (AdSense will replace after approval)</div>
+          <h3 style="margin-top:16px">Why this tool is safe</h3>
+          <p>All QR generation is performed in your browser using JavaScript. We do not log the text or credentials that you encode. The site uses Google Analytics (GA4) for anonymous traffic reports and AdSense to display ads. For full details see our <a href="/privacy.html">Privacy Policy</a>.</p>
 
-            <h3 style="margin-top:16px">Tips for best results</h3>
-            <ul>
-              <li>Use https:// links for website QR codes.</li>
-              <li>Choose high contrast colors (dark foreground, light background).</li>
-              <li>For printing use SVG or a high-size PNG (600–1200 px).</li>
-              <li>Test the QR on multiple phones before printing.</li>
-            </ul>
+          <h3 style="margin-top:14px">Tips for best results</h3>
+          <ol>
+            <li>Use https:// links for produced QR codes to avoid browser warnings.</li>
+            <li>When printing, choose SVG or a high DPI PNG (600–1200 px).</li>
+            <li>For WiFi QR, set the correct encryption type (WPA/WPA2) and test the QR on multiple devices.</li>
+          </ol>
 
-            <p style="margin-top:12px">If you’d like to learn more about QR codes and practical examples, check our guides: <a href="/how-to-create-qr.html">How to create a QR</a> and <a href="/wifi-qr-generator.html">WiFi QR guide</a>.</p>
-          </div>
+          <p style="margin-top:12px">If you need more help, check our guides: <a href="/how-to-create-qr.html">How to create QR</a> and <a href="/wifi-qr-generator.html">WiFi QR guide</a>.</p>
         </div>
       </main>
 
@@ -84,10 +98,9 @@
           <h3>Quick Links</h3>
           <ul style="padding-left:18px">
             <li><a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/">Open QR Maker</a></li>
-            <li><a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/how-to-create-qr.html">How to create QR</a></li>
-            <li><a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/wifi-qr-generator.html">WiFi QR</a></li>
+            <li><a href="/how-to-create-qr.html">How to create QR</a></li>
+            <li><a href="/wifi-qr-generator.html">WiFi QR</a></li>
             <li><a href="/privacy.html">Privacy Policy</a></li>
-            <li><a href="/terms.html">Terms & Conditions</a></li>
           </ul>
 
           <div style="margin-top:16px" class="ad-slot">Sidebar ad placeholder</div>
@@ -97,7 +110,7 @@
 
     <footer>
       <div style="margin-bottom:6px">© Subhajit Sen — QR Maker • <a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a></div>
-      <div style="font-size:13px;color:#9ca3af">Built for students and small businesses — no tracking beyond necessary analytics.</div>
+      <div style="font-size:13px;color:#9ca3af">Built for students, small businesses and events — privacy-first, fast, and free.</div>
     </footer>
   </div>
 </body>
