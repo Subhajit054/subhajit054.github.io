@@ -3,22 +3,114 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About — Subhajit's Projects (QR Maker)</title>
-  <meta name="description" content="About the author and the QR Maker project." />
+  <title>About — Subhajit Sen | QR Maker</title>
+  <meta name="description" content="About the author and the QR Maker project. Learn who built this free QR code generator, how it works, and how to contact the developer." />
   <link rel="canonical" href="https://subhajit054.github.io/about.html" />
   <meta name="robots" content="index,follow" />
-  <style>body{font-family:Inter,Arial,Helvetica;margin:20px;max-width:900px;color:#111} h1{font-size:22px} p{line-height:1.6}</style>
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="About — Subhajit Sen | QR Maker" />
+  <meta property="og:description" content="Learn about the developer and the QR Maker project: a fast, privacy-first QR code generator." />
+  <meta property="og:url" content="https://subhajit054.github.io/about.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="About — Subhajit Sen | QR Maker" />
+  <meta name="twitter:description" content="Fast, privacy-first QR code generator built by Subhajit Sen." />
+
+  <style>
+    body{font-family:Inter,Arial,Helvetica,sans-serif;margin:20px;max-width:900px;color:#111;line-height:1.65}
+    h1{font-size:28px;margin-bottom:6px}
+    h2{font-size:18px;margin-top:22px}
+    p{margin:10px 0}
+    .muted{color:#555;font-size:14px}
+    a{color:#0b63d6}
+    footer{margin-top:36px;border-top:1px solid #eee;padding-top:18px;color:#444;font-size:14px}
+    .meta{background:#f7f7f8;padding:12px;border-radius:8px;margin:14px 0}
+    dl{margin:8px 0}
+    dt{font-weight:bold}
+    dd{margin:0 0 10px 0}
+  </style>
+
+  <!-- Structured data for organization/person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Subhajit Sen",
+    "url": "https://subhajit054.github.io/",
+    "sameAs": [],
+    "jobTitle": "Web developer / Student",
+    "description": "Developer of QR Maker — a free, privacy-first QR code generator hosted on GitHub Pages."
+  }
+  </script>
 </head>
 <body>
-  <h1>About</h1>
-  <p>Hi — I’m <strong>Subhajit Sen</strong>, a B.Tech student and web developer. I build small tools and web apps that solve everyday problems for students and small businesses. QR Maker began as a student project and grew into a simple, privacy-first utility for generating reliable QR codes without any servers.</p>
+  <h1>About QR Maker</h1>
 
-  <h2>Mission</h2>
-  <p>My goal is to make useful web tools that respect privacy and are free to use. QR Maker focuses on speed, safety, and simplicity so anyone can create QR codes quickly and download them for print or digital use.</p>
+  <p>
+    Hi — I’m <strong>Subhajit Sen</strong>, a B.Tech student and web developer from India. I build small web tools and projects that help students, creators and small businesses solve everyday problems. 
+    <strong>QR Maker</strong> started as a simple student project and became a lightweight, privacy-first utility for creating reliable QR codes without any server-side processing.
+  </p>
+
+  <div class="meta">
+    <strong>Quick facts</strong>
+    <dl>
+      <dt>Purpose</dt>
+      <dd>Generate high-quality QR codes quickly and download them as PNG images.</dd>
+      <dt>Privacy</dt>
+      <dd>Everything is generated locally in your browser — no text or URLs are stored on the server.</dd>
+      <dt>Cost</dt>
+      <dd>Free to use — no registration required.</dd>
+    </dl>
+  </div>
+
+  <h2>Why I built this</h2>
+  <p>
+    I noticed students and small businesses needing an easy way to create QR codes for events, business cards, posters and simple payment links. Many tools either required sign-up, tracked users, or added watermarks. I wanted a fast, clean tool that respects privacy and works on any device — so I made QR Maker.
+  </p>
+
+  <h2>How QR Maker works</h2>
+  <p>
+    The QR generation runs entirely in your browser using a small JavaScript library. When you enter text or a URL and click “Generate”, the page draws the QR code on a canvas or image and lets you download it as a PNG. Because everything happens locally, nothing is sent to any external server.
+  </p>
+
+  <h2>Who should use it</h2>
+  <p>
+    QR Maker is useful for:
+  </p>
+  <ul>
+    <li>Students creating contact pages or event flyers</li>
+    <li>Small businesses printing QR codes for product info or menus</li>
+    <li>Developers and designers needing quick test QR codes</li>
+    <li>Anyone who wants a simple, no-friction QR generator</li>
+  </ul>
+
+  <h2>Common questions (FAQ)</h2>
+  <h3>Is my data stored?</h3>
+  <p class="muted">No — QR Maker does not store the text you type. All processing is done in your browser.</p>
+
+  <h3>Can I create large resolution QR codes for print?</h3>
+  <p class="muted">Yes — choose a larger size option on the generator page (256 or 512) and download the PNG. For professional print, export at the highest size available and use vector tools if needed.</p>
+
+  <h3>Can I use these QR codes commercially?</h3>
+  <p class="muted">Yes — generated QR codes are free to use for personal and commercial projects. See the <a href="terms.html">Terms &amp; Conditions</a> for details.</p>
 
   <h2>Contact</h2>
-  <p>If you have suggestions or want help integrating QR codes into your business, email: <strong>subhasen054@gmail.com</strong></p>
+  <p>If you have suggestions, bug reports, or need help integrating QR codes in your project, email me at <strong><a href="mailto:subhasen054@gmail.com">subhasen054@gmail.com</a></strong>.</p>
+  <p class="muted">(Prefer not to publish a contact form yet? You can keep this email visible as above.)</p>
 
-  <p><a href="/">Back to Home</a></p>
+  <footer>
+    <p>
+      <a href="/">Home</a> • <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms</a>
+    </p>
+    <p class="muted">© <span id="year"></span> Subhajit Sen — QR Maker. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // small script to set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
