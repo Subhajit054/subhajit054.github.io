@@ -3,128 +3,206 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>QR Maker — Free QR Code Generator by Subhajit</title>
-  <meta name="description" content="QR Maker — free online QR code generator. Create URL, WiFi, phone & text QR codes. Download PNG or SVG." />
+  <title>Subhajit's Projects — QR Maker & Tools</title>
+  <meta name="description" content="QR Maker — free online QR generator and useful tools by Subhajit Sen. Create URL, WiFi, phone & text QR. Download PNG & SVG instantly." />
   <link rel="canonical" href="https://subhajit054.github.io/" />
-  <meta property="og:title" content="QR Maker — Free QR Code Generator" />
-  <meta property="og:description" content="Generate QR codes fast: URL, WiFi, phone, text. Download high-quality PNG or SVG." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://subhajit054.github.io/" />
-  <meta property="og:image" content="https://subhajit054.github.io/og-image.png" />
 
-  <!-- AdSense Auto-Ads (keep your publisher ID) -->
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Subhajit's Projects — Free QR Maker" />
+  <meta property="og:description" content="Generate custom QR codes for free — URL, WiFi, phone & more." />
+  <meta property="og:url" content="https://subhajit054.github.io/" />
+  <meta property="og:type" content="website" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Subhajit's Projects - QR Maker",
+    "url":"https://subhajit054.github.io/",
+    "description":"Free online QR Maker — create QR codes instantly."
+  }
+  </script>
+
+  <!-- Google AdSense Auto Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7253912036541448"
      crossorigin="anonymous"></script>
 
+  <!-- Styling -->
   <style>
-    :root{
-      --bg:#0f172a; --white:#fff; --muted:#94a3b8; --accent:#06b6d4; --accent2:#8b5cf6;
+    :root {
+      --bg:#f1f5ff;
+      --card:#ffffff;
+      --accent:#0ea5a3;
+      --accent2:#6366f1;
+      --text:#0f172a;
+      --muted:#6b7280;
     }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(135deg,#071022,#071a2f);color:var(--white)}
-    a{color:inherit}
-    header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:rgba(255,255,255,0.02)}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#001}
-    nav a{margin-left:16px;color:var(--white);text-decoration:none;font-weight:600}
-    .wrap{max-width:1100px;margin:28px auto;padding:0 20px}
-    .hero{display:flex;gap:20px;align-items:center;padding:26px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
-    .hero-left{flex:1}
-    h1{font-size:28px;margin:0 0 10px}
-    .lead{color:var(--muted);margin:0 0 16px}
-    .cta-row{display:flex;gap:12px}
-    .btn{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#001;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
-    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
-    .features{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
-    .feature{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:10px;font-size:13px;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:20px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px}
-    .ad-slot{background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));border:1px dashed rgba(255,255,255,0.04);padding:10px;border-radius:8px;text-align:center;color:var(--muted);margin:12px 0}
-    footer{margin-top:28px;padding:12px 0;text-align:center;color:var(--muted);font-size:13px}
-    @media(max-width:880px){.hero{flex-direction:column}.grid{grid-template-columns:1fr}nav a{display:none}}
+    body {
+      margin:0;
+      font-family:Inter,system-ui,Arial;
+      background:linear-gradient(180deg,#f4f7ff 0%,#eef4ff 100%);
+      color:var(--text);
+    }
+    header {
+      padding:18px 24px;
+      background:linear-gradient(90deg,#fff,#f9f9ff);
+      border-bottom:1px solid #dfe7ff;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .logo {
+      width:48px;
+      height:48px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#fff;
+      font-weight:700;
+      font-size:20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    nav a {
+      margin-left:14px;
+      text-decoration:none;
+      font-weight:600;
+      color:var(--text);
+    }
+    .wrap {
+      max-width:1100px;
+      margin:20px auto;
+      padding:18px;
+    }
+    .grid {
+      display:grid;
+      gap:18px;
+      grid-template-columns:1fr 320px;
+    }
+    .card {
+      background:var(--card);
+      padding:18px;
+      border-radius:12px;
+      box-shadow:0 6px 20px rgba(0,0,0,.05);
+    }
+    .btn {
+      display:inline-block;
+      padding:12px 16px;
+      background:var(--accent);
+      color:#fff;
+      border-radius:10px;
+      font-weight:700;
+      text-decoration:none;
+    }
+    .ad-slot {
+      background:#eef2ff;
+      border:1px dashed #b8c3ff;
+      color:#4c51bf;
+      padding:12px;
+      border-radius:10px;
+      text-align:center;
+      margin:16px 0;
+      font-size:14px;
+    }
+    footer {
+      margin-top:20px;
+      padding:18px;
+      text-align:center;
+      font-size:14px;
+      color:var(--muted);
+    }
+    @media(max-width:900px){
+      .grid{grid-template-columns:1fr;}
+    }
   </style>
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header>
     <div class="brand">
-      <div class="logo" aria-hidden="true">QR</div>
+      <div class="logo">SS</div>
       <div>
         <div style="font-weight:800">Subhajit's Projects</div>
-        <div style="font-size:12px;color:var(--muted)">Free web tools & demos</div>
+        <div style="font-size:12px;color:var(--muted)">Free Tools • QR Maker</div>
       </div>
     </div>
+
+    <!-- FIXED NAVIGATION (absolute links for GitHub Pages) -->
     <nav>
-      <a href="/">Home</a>
-      <a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" target="_blank">Open QR Maker</a>
-      <a href="/how-to-create-qr.html">How-to</a>
-      <a href="/wifi-qr-generator.html">WiFi guide</a>
-      <a href="/privacy.html">Privacy</a>
+      <a href="https://subhajit054.github.io/">Home</a>
+      <a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" target="_blank">QR Maker</a>
+      <a href="https://subhajit054.github.io/how-to-create-qr.html">How to Create QR</a>
+      <a href="https://subhajit054.github.io/wifi-qr-generator.html">WiFi QR</a>
+      <a href="https://subhajit054.github.io/privacy.html">Privacy</a>
+      <a href="https://subhajit054.github.io/terms.html">Terms</a>
     </nav>
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="wrap">
-    <section class="hero">
-      <div class="hero-left">
-        <h1>QR Maker — create QR codes in seconds</h1>
-        <p class="lead">Generate URL, WiFi, phone, email or text QR codes. Customize colors, size, and download as PNG or SVG — all in your browser. No server upload, privacy-friendly.</p>
-        <div class="cta-row">
-          <a class="btn" href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" target="_blank">Open QR Maker — Free</a>
-          <a class="btn secondary" href="/how-to-create-qr.html">How to create a QR</a>
-        </div>
-        <div class="features" aria-hidden="true">
-          <div class="feature">Fast — client-side</div>
-          <div class="feature">PNG & SVG downloads</div>
-          <div class="feature">WiFi, URL, Text, Phone</div>
-          <div class="feature">No server uploads</div>
-        </div>
-      </div>
-
-      <aside style="width:320px">
-        <div class="card">
-          <div style="display:flex;justify-content:space-between;align-items:center">
-            <div>
-              <div style="font-weight:700">Quick demo</div>
-              <div style="color:var(--muted);font-size:13px">Generate & download a QR</div>
-            </div>
-            <div style="width:66px;height:66px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#001">QR</div>
-          </div>
-          <div class="ad-slot">Top ad placeholder — will be replaced by AdSense after approval</div>
-          <div style="margin-top:12px"><a class="btn" href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" target="_blank">Open QR Maker</a></div>
-        </div>
-      </aside>
-    </section>
-
     <div class="grid">
-      <div>
-        <div class="card">
-          <h3 style="margin-top:0">About QR Maker</h3>
-          <p style="color:var(--muted)">A lightweight web tool that creates QR codes entirely in the browser. No data leaves your device. Useful for menus, business cards, WiFi sharing and more.</p>
-          <div class="ad-slot">In-article ad placeholder</div>
 
-          <h4 style="margin-top:12px">Quick links</h4>
-          <ul style="padding-left:18px;color:var(--muted)">
-            <li><a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" style="color:var(--white)">Open QR Maker</a></li>
-            <li><a href="/how-to-create-qr.html" style="color:var(--white)">How-to guide</a></li>
-            <li><a href="/wifi-qr-generator.html" style="color:var(--white)">WiFi QR guide</a></li>
-          </ul>
-        </div>
-      </div>
+      <!-- LEFT SIDE -->
+      <section class="card">
+        <h1>Free QR Maker — Fast & Easy</h1>
+        <p style="color:var(--muted)">Generate custom QR codes for URLs, WiFi, phone numbers & text. Download in PNG or SVG instantly.</p>
 
-      <aside>
-        <div class="card">
-          <h3 style="margin-top:0">Contact</h3>
-          <p style="color:var(--muted)">Questions or changes? Email: <strong>subhasen054@gmail.com</strong></p>
-          <div class="ad-slot">Sidebar ad placeholder</div>
-          <div style="color:var(--muted);margin-top:12px">© Subhajit Sen <span id="year"></span></div>
-        </div>
+        <a class="btn" href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" target="_blank">Open QR Maker</a>
+
+        <div class="ad-slot">Top Banner Ad Placeholder</div>
+
+        <h2>Features</h2>
+        <ul>
+          <li>Create Unlimited QR Codes</li>
+          <li>URL, WiFi, Email, Text & Phone Support</li>
+          <li>Download as PNG & SVG</li>
+          <li>Works 100% offline in your browser</li>
+        </ul>
+
+        <div class="ad-slot">In-Content Ad Placeholder</div>
+
+        <h3>Useful Pages</h3>
+        <ul>
+          <li><a href="https://subhajit054.github.io/how-to-create-qr.html">How to Create QR Codes</a></li>
+          <li><a href="https://subhajit054.github.io/wifi-qr-generator.html">WiFi QR Generator Guide</a></li>
+          <li><a href="https://subhajit054.github.io/privacy.html">Privacy Policy</a></li>
+        </ul>
+      </section>
+
+      <!-- RIGHT SIDE -->
+      <aside class="card">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/">Open QR Maker</a></li>
+          <li><a href="https://subhajit054.github.io/how-to-create-qr.html">QR Tutorial</a></li>
+          <li><a href="https://subhajit054.github.io/wifi-qr-generator.html">WiFi QR Guide</a></li>
+        </ul>
+
+        <div class="ad-slot">Sidebar Ad Placeholder</div>
+
+        <h4>Contact</h4>
+        <p style="color:var(--muted);font-size:14px;">Email: subhasen054@gmail.com</p>
       </aside>
-    </div>
 
-    <footer>
-      <div style="color:var(--muted)">Built with ❤️ • <a href="/privacy.html" style="color:var(--white)">Privacy</a> • <a href="/terms.html" style="color:var(--white)">Terms</a></div>
-    </footer>
+    </div>
   </main>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Subhajit Sen •  
+    <a href="https://subhajit054.github.io/privacy.html">Privacy</a> •
+    <a href="https://subhajit054.github.io/terms.html">Terms</a>
+    <br />
+    <span style="font-size:13px;color:var(--muted)">Sitemap + Ads.txt Enabled</span>
+  </footer>
+
 </body>
 </html>
