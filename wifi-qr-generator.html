@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WiFi QR Generator — Share WiFi Easily</title>
+  <meta name="description" content="Create a QR code that automatically connects devices to WiFi. Learn format, security tips, and how to use WiFi QR codes safely." />
+  <link rel="canonical" href="https://subhajit054.github.io/wifi-qr-generator.html" />
+  <meta name="robots" content="index,follow" />
+  <style>
+    body{font-family:Inter,Arial,Helvetica,sans-serif;margin:20px;max-width:900px;color:#111;line-height:1.6}
+    h1{font-size:26px}
+    h2{font-size:18px;margin-top:18px}
+    ul{margin:8px 0 16px 20px}
+    p{margin:8px 0}
+    code{background:#f7f7f8;padding:2px 6px;border-radius:4px}
+    footer{margin-top:28px;color:#666;font-size:14px}
+    a{color:#0b63d6}
+  </style>
+</head>
+<body>
+  <h1>WiFi QR Generator</h1>
+
+  <p>
+    A WiFi QR allows visitors to scan a code and connect to your network automatically (many phones support this feature). This page explains the format and safety tips.
+  </p>
+
+  <h2>WiFi QR format</h2>
+  <p>
+    The standard format for WiFi QR content is:
+  </p>
+  <p><code>WIFI:T:<strong>WPA</strong>;S:<strong>NetworkName</strong>;P:<strong>Password</strong>;H:<strong>false</strong>;;</code></p>
+  <ul>
+    <li><code>T:</code> is the authentication type: <code>WEP</code>, <code>WPA</code>, or left empty for no password.</li>
+    <li><code>S:</code> is the SSID (network name).</li>
+    <li><code>P:</code> is the password (leave blank for open networks).</li>
+    <li><code>H:</code> is <code>true</code> if the SSID is hidden; otherwise <code>false</code>.</li>
+  </ul>
+
+  <h2>Example</h2>
+  <p>
+    For a WPA network named <code>CafeNetwork</code> with password <code>guest1234</code>, the QR data is:
+  </p>
+  <pre style="background:#f4f4f5;padding:10px;border-radius:6px">WIFI:T:WPA;S:CafeNetwork;P:guest1234;H:false;;</pre>
+
+  <h2>How to create</h2>
+  <ol>
+    <li>Open <a href="qrmaker.html">QR Maker</a>.</li>
+    <li>Choose the "Text" or "WiFi" type (if available) and paste the formatted string above.</li>
+    <li>Click Generate and test with a phone by scanning the result.</li>
+  </ol>
+
+  <h2>Security and privacy tips</h2>
+  <ul>
+    <li>Share WiFi QR only with trusted guests.</li>
+    <li>Change guest network passwords periodically.</li>
+    <li>For public places, consider a guest network with limited access rather than your main network.</li>
+  </ul>
+
+  <h2>Troubleshooting</h2>
+  <ul>
+    <li>If devices don't connect, verify the SSID and password are exactly correct (they are case-sensitive).</li>
+    <li>Some devices may not support hidden SSIDs or certain authentication types.</li>
+  </ul>
+
+  <footer>
+    <p>Back to <a href="/">Home</a> • <a href="how-to-create-qr.html">How to create a QR</a></p>
+  </footer>
+</body>
+</html>
