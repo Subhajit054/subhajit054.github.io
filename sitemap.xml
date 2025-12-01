@@ -1,10 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://subhajit054.github.io/</loc></url>
-  <url><loc>https://subhajit054.github.io/how-to-create-qr.html</loc></url>
-  <url><loc>https://subhajit054.github.io/wifi-qr-generator.html</loc></url>
-  <url><loc>https://subhajit054.github.io/Ultimate-QR-Code-Generator/</loc></url>
-  <url><loc>https://subhajit054.github.io/privacy.html</loc></url>
-  <url><loc>https://subhajit054.github.io/terms.html</loc></url>
-  <url><loc>https://subhajit054.github.io/about.html</loc></url>
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://subhajit054.github.io/</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://subhajit054.github.io/about.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>httpsubhajit054.github.io/privacy.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://subhajit054.github.io/terms.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- QR Maker Tool -->
+  <url>
+    <loc>https://subhajit054.github.io/qrmaker.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Additional pages (only if they exist) -->
+  <url>
+    <loc>https://subhajit054.github.io/how-to-create-qr.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://subhajit054.github.io/wifi-qr-generator.html</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://subhajit054.github.io/Ultimate-QR-Code-Generator/</loc>
+    <lastmod>2025-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.40</priority>
+  </url>
+
 </urlset>
