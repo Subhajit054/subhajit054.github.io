@@ -1,253 +1,210 @@
-# Files for AdSense approval — ready to copy
-
-Below are the files you asked for. Each file is shown with a filename header. Copy each file into the **root repository** named `subhajit054.github.io` (or update the existing files there). After you push them, enable GitHub Pages (Settings → Pages → deploy from `main` branch, root) and then request AdSense review.
-
----
-
---- FILE: index.html ---
-
-```html
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Subhajit's Projects — QR Maker</title>
-  <meta name="description" content="Subhajit's projects: QR Maker — free QR code generator and simple web tools." />
+  <title>QR Maker — Free QR Code Generator by Subhajit</title>
+  <meta name="description" content="QR Maker — free online QR code generator. Create URL, WiFi, phone & text QR codes. Download PNG or SVG." />
   <link rel="canonical" href="https://subhajit054.github.io/" />
-
-  <!-- OpenGraph -->
-  <meta property="og:title" content="Subhajit's Projects — QR Maker" />
-  <meta property="og:description" content="Try the free QR Maker — generate QR codes for URLs, WiFi, phone and download PNG/SVG." />
-  <meta property="og:url" content="https://subhajit054.github.io/" />
+  <meta property="og:title" content="QR Maker — Free QR Code Generator" />
+  <meta property="og:description" content="Generate QR codes fast: URL, WiFi, phone, text. Download high-quality PNG or SVG." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://subhajit054.github.io/" />
+  <!-- If you later add og-image.png upload and replace this -->
+  <meta property="og:image" content="https://subhajit054.github.io/og-image.png" />
 
-  <!-- AdSense Auto-Ads (your publisher ID inserted) -->
+  <!-- AdSense Auto-Ads (your publisher ID kept) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7253912036541448"
      crossorigin="anonymous"></script>
 
   <style>
-    body{font-family:Inter,system-ui,Arial,Helvetica;margin:0;color:#0f172a;background:#f8fafc}
-    header{background:#fff;padding:18px;border-bottom:1px solid #e6eef8;display:flex;align-items:center;justify-content:space-between}
-    .wrap{max-width:980px;margin:28px auto;padding:20px}
-    nav a{margin-right:14px;color:#0369a1;text-decoration:none;font-weight:600}
-    .hero{background:#fff;padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,.04)}
-    .ad-slot{background:#f1f5f9;border:1px dashed #c7d2fe;padding:12px;border-radius:8px;text-align:center;color:#4c51bf;margin:14px 0}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
-    .card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,.03)}
-    footer{padding:18px;text-align:center;color:#6b7280;font-size:14px;margin-top:18px}
-    @media(max-width:880px){.grid{grid-template-columns:1fr}}
+    :root{
+      --bg:#0f172a; /* deep navy */
+      --card:#0b1220;
+      --accent:#06b6d4; /* turquoise */
+      --accent-2:#8b5cf6; /* purple */
+      --muted:#94a3b8;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+      background:linear-gradient(135deg,#071022 0%, #071a2f 50%, #071022 100%);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    a{color:inherit}
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 24px;
+      background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      backdrop-filter: blur(6px);
+      border-bottom:1px solid rgba(255,255,255,0.04);
+    }
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{
+      width:44px;height:44px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#001;
+      box-shadow:0 8px 30px rgba(139,92,246,0.12);
+    }
+    nav a{margin-left:16px;color:var(--white);opacity:0.9;text-decoration:none;font-weight:600;font-size:15px}
+    nav a:hover{opacity:1;text-decoration:underline}
+    .wrap{max-width:1100px;margin:28px auto;padding:0 20px}
+    .hero{
+      display:flex;gap:20px;align-items:center;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding:26px;border-radius:14px;border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 10px 40px rgba(2,6,23,0.6);
+    }
+    .hero-left{flex:1}
+    h1{font-size:28px;margin:0 0 10px 0;line-height:1.05}
+    p.lead{color:var(--muted);margin:0 0 18px 0;font-size:15px}
+    .cta-row{display:flex;gap:12px;align-items:center}
+    .btn{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#001;border:none;padding:10px 16px;border-radius:10px;font-weight:700;cursor:pointer;text-decoration:none;
+      box-shadow:0 8px 30px rgba(6,182,212,0.12);
+    }
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white);font-weight:600}
+    .features{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+    .feature{background:rgba(255,255,255,0.02);padding:10px 12px;border-radius:10px;font-size:13px;color:var(--muted)}
+    .hero-right{width:320px}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;padding:14px;border:1px solid rgba(255,255,255,0.03)
+    }
+    .ad-slot{background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));border:1px dashed rgba(255,255,255,0.04);padding:10px;border-radius:8px;text-align:center;color:var(--muted);margin:12px 0}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:22px}
+    .card h3{margin:0 0 8px 0}
+    .tools-list{list-style:none;padding:0;margin:10px 0 0 0}
+    .tools-list li{background:linear-gradient(90deg, rgba(255,255,255,0.01), transparent);padding:8px;border-radius:8px;margin-bottom:8px;font-size:14px;color:var(--muted)}
+    footer{margin-top:30px;padding:20px 0;text-align:center;color:var(--muted);font-size:14px}
+    .muted{color:var(--muted);font-size:13px}
+    /* responsive */
+    @media(max-width:880px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .grid{grid-template-columns:1fr}
+      .hero-right{width:100%}
+      nav a{display:none} /* small screens keep header minimal */
+    }
   </style>
 </head>
 <body>
   <header>
-    <div style="display:flex;gap:12px;align-items:center">
-      <div style="font-weight:700;font-size:18px">Subhajit's Projects</div>
-      <nav>
-        <a href="/">Home</a>
-        <a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" target="_blank">QR Maker</a>
-        <a href="/how-to-create-qr.html">How to create QR</a>
-        <a href="/wifi-qr-generator.html">WiFi QR</a>
-      </nav>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">QR</div>
+      <div>
+        <div style="font-weight:800;font-size:16px">Subhajit's Projects</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.65)">Free web tools & demos</div>
+      </div>
     </div>
-    <div style="font-size:13px;color:#6b7280">Contact • About</div>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" target="_blank">Open QR Maker</a>
+      <a href="/how-to-create-qr.html">How-to</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
   </header>
 
-  <div class="wrap">
-    <div class="grid">
-      <main>
-        <div class="hero card">
-          <h1 style="margin-top:0">Welcome — QR Maker & Tools</h1>
-          <p>Create QR codes for URLs, text, phone numbers, or WiFi. Use the QR Maker app to generate PNG or SVG instantly.</p>
-          <p><a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" style="display:inline-block;padding:10px 14px;background:#0ea5a3;color:#fff;border-radius:8px;text-decoration:none">Open QR Maker (free)</a></p>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>QR Maker — create QR codes in seconds</h1>
+        <p class="lead">Generate URL, WiFi, phone, email or text QR codes. Customize colors, size, and download as PNG or SVG — all in your browser.</p>
 
-          <div class="ad-slot" aria-hidden="true">
-            Top banner ad placeholder — this will be replaced by AdSense after approval
+        <div class="cta-row">
+          <a class="btn" href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" target="_blank">Open QR Maker — Free</a>
+          <a class="btn secondary" href="/how-to-create-qr.html">How to create a QR</a>
+        </div>
+
+        <div class="features" aria-hidden="true">
+          <div class="feature">Fast — client-side</div>
+          <div class="feature">Download PNG/SVG</div>
+          <div class="feature">WiFi, URL, Text, Phone</div>
+          <div class="feature">Privacy-friendly</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:700">Quick demo</div>
+              <div class="muted" style="font-size:13px">Generate a QR and download</div>
+            </div>
+            <div style="width:76px;height:76px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:#001">QR</div>
           </div>
 
-          <h2>About this project</h2>
-          <p>This site hosts a simple and free QR code generator built with client-side JavaScript. It works offline in the browser and supports URL, Text, Phone, Email and WiFi QR types. Download your QR as PNG or SVG.</p>
+          <div style="margin-top:12px" class="ad-slot">Top ad placeholder (AdSense will replace)</div>
 
-          <h3>Quick start</h3>
-          <ol>
-            <li>Click "Open QR Maker" above</li>
-            <li>Choose type (URL, Text, WiFi)</li>
-            <li>Set size & colors, then click Generate</li>
-            <li>Download PNG or SVG</li>
+          <div style="margin-top:8px;font-size:14px">
+            <strong>Open the tool</strong>
+            <div style="margin-top:8px"><a class="btn" href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" target="_blank">Open QR Maker</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <div>
+        <div class="card" style="margin-bottom:14px">
+          <h3>About QR Maker</h3>
+          <p class="muted">QR Maker is a lightweight web app that generates QR codes in the browser. It uses a small JavaScript library and does not send your data to any server.</p>
+
+          <h4 style="margin-top:12px">How it works</h4>
+          <ol style="color:var(--muted);padding-left:18px">
+            <li>Choose QR type (URL/Text/WiFi)</li>
+            <li>Enter the data and customize size/colors</li>
+            <li>Click Generate and then Download</li>
           </ol>
+        </div>
 
-          <div class="ad-slot">In-article ad placeholder — replace after approval</div>
+        <div class="card">
+          <h3>Why trust this tool?</h3>
+          <ul style="color:var(--muted);padding-left:18px">
+            <li>All processing happens in your browser</li>
+            <li>No user accounts — no server-side storage</li>
+            <li>Simple, open code on GitHub</li>
+          </ul>
 
-          <h3>Other pages</h3>
-          <ul>
-            <li><a href="/how-to-create-qr.html">How to create a QR code (guide)</a></li>
-            <li><a href="/wifi-qr-generator.html">WiFi QR generator guide</a></li>
-            <li><a href="/privacy.html">Privacy Policy</a></li>
-            <li><a href="/terms.html">Terms & Conditions</a></li>
+          <div class="ad-slot">In-article ad placeholder</div>
+
+          <h3 style="margin-top:12px">Quick links</h3>
+          <ul class="tools-list">
+            <li><a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/" style="color:var(--white)">Open QR Maker</a></li>
+            <li><a href="/how-to-create-qr.html" style="color:var(--white)">How-to guide</a></li>
+            <li><a href="/wifi-qr-generator.html" style="color:var(--white)">WiFi QR guide</a></li>
           </ul>
         </div>
-      </main>
+      </div>
 
       <aside>
         <div class="card">
-          <h3>Quick Links</h3>
-          <ul style="padding-left:18px">
-            <li><a href="https://subhajit054.github.io/Ultimate-QR-Code-Generator/">QR Maker</a></li>
-            <li><a href="/how-to-create-qr.html">How to create QR</a></li>
-            <li><a href="/wifi-qr-generator.html">WiFi QR</a></li>
-          </ul>
+          <h3>Get help</h3>
+          <p class="muted">If you need changes or want the source, contact: <br><strong>subhasen054@gmail.com</strong></p>
 
-          <div style="margin-top:16px" class="ad-slot">
-            Sidebar ad placeholder — replace with AdSense unit (responsive)
-          </div>
+          <div style="margin-top:12px" class="ad-slot">Sidebar ad placeholder</div>
+
+          <div style="margin-top:12px" class="muted">© Subhajit Sen — <span id="year"></span></div>
         </div>
       </aside>
     </div>
 
     <footer>
-      <div>© Subhajit Sen — QR Maker • <a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a></div>
+      <div class="muted">Built with ❤️ • <a href="/privacy.html" style="color:var(--white)">Privacy</a> • <a href="/terms.html" style="color:var(--white)">Terms</a></div>
     </footer>
-  </div>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-```
-
---- FILE: privacy.html ---
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Privacy Policy — Subhajit's Projects</title>
-  <meta name="description" content="Privacy Policy for Subhajit's Projects and QR Maker." />
-  <link rel="canonical" href="https://subhajit054.github.io/privacy.html" />
-  <style>body{font-family:Inter,Arial,Helvetica;margin:20px;max-width:900px;color:#0f172a}footer{margin-top:30px;color:#6b7280}</style>
-</head>
-<body>
-  <h1>Privacy Policy</h1>
-  <p>Last updated: <strong>Nov 30, 2025</strong></p>
-
-  <p>This Privacy Policy describes how <strong>Subhajit Sen</strong> collects, uses and discloses your personal information when you use the websites hosted at <a href="https://subhajit054.github.io">https://subhajit054.github.io</a> and related project pages (including the QR Maker).</p>
-
-  <h2>Information we collect</h2>
-  <ul>
-    <li>We do not collect personal data through the QR Maker tool — all QR generation happens in your browser.</li>
-    <li>We may collect non-identifying analytics information (page views, device type) via Google Analytics.</li>
-  </ul>
-
-  <h2>Use of Google services</h2>
-  <p>We use Google Analytics for traffic measurement and Google AdSense for advertising. These services may collect user information under their own privacy policies. See Google’s privacy documentation for details.</p>
-
-  <h2>Cookies</h2>
-  <p>We use cookies only for analytics and functionality where necessary. You can disable cookies in your browser settings.</p>
-
-  <h2>Third-party links</h2>
-  <p>This site may contain links to third-party websites; we are not responsible for their content or privacy practices.</p>
-
-  <h2>Contact</h2>
-  <p>If you have privacy questions, contact: <strong>subhasen054@gmail.com</strong></p>
-
-  <footer>
-    <a href="/">Home</a> • <a href="/terms.html">Terms</a>
-  </footer>
-</body>
-</html>
-```
-
---- FILE: terms.html ---
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Terms & Conditions — Subhajit's Projects</title>
-  <meta name="description" content="Terms and conditions for Subhajit's Projects." />
-  <link rel="canonical" href="https://subhajit054.github.io/terms.html" />
-  <style>body{font-family:Inter,Arial,Helvetica;margin:20px;max-width:900px;color:#0f172a}footer{margin-top:30px;color:#6b7280}</style>
-</head>
-<body>
-  <h1>Terms & Conditions</h1>
-  <p>Last updated: <strong>Nov 30, 2025</strong></p>
-
-  <p>Welcome to Subhajit's Projects. By using the websites hosted at <a href="https://subhajit054.github.io">https://subhajit054.github.io</a> (including the QR Maker), you agree to the following terms and conditions.</p>
-
-  <h2>Use of the service</h2>
-  <p>The QR Maker is provided as-is for educational and personal use. You may use it to generate QR codes for your own content. You are responsible for how you use generated QR codes.</p>
-
-  <h2>Intellectual property</h2>
-  <p>All code and content provided by Subhajit Sen is copyright of the author unless otherwise noted. You may reuse or fork the project under normal GitHub repo terms.</p>
-
-  <h2>Limitation of liability</h2>
-  <p>Subhajit Sen is not liable for any loss or damage arising from the use of the QR Maker or this site.</p>
-
-  <h2>Contact</h2>
-  <p>For questions regarding these terms, contact: <strong>subhasen054@gmail.com</strong></p>
-
-  <footer>
-    <a href="/">Home</a> • <a href="/privacy.html">Privacy</a>
-  </footer>
-</body>
-</html>
-```
-
---- FILE: sitemap.xml ---
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://subhajit054.github.io/</loc></url>
-  <url><loc>https://subhajit054.github.io/Ultimate-QR-Code-Generator/</loc></url>
-  <url><loc>https://subhajit054.github.io/how-to-create-qr.html</loc></url>
-  <url><loc>https://subhajit054.github.io/wifi-qr-generator.html</loc></url>
-  <url><loc>https://subhajit054.github.io/privacy.html</loc></url>
-  <url><loc>https://subhajit054.github.io/terms.html</loc></url>
-</urlset>
-```
-
---- FILE: robots.txt ---
-
-```text
-User-agent: *
-Allow: /
-Sitemap: https://subhajit054.github.io/sitemap.xml
-```
-
----
-
-# Deployment Instructions (copy-paste)
-
-1. Create a new repository named exactly: `subhajit054.github.io` (if you haven't already).
-2. In that repo, create the files: `index.html`, `privacy.html`, `terms.html`, `sitemap.xml`, `robots.txt`, and `ads.txt` (ads.txt you already added earlier). Paste the contents from above.
-3. Commit & push to `main` branch.
-4. Go to repo Settings → Pages → Deploy from `main` branch → root (if not auto-deployed). Wait 1–2 minutes.
-5. Verify the pages open in your browser:
-   - https://subhajit054.github.io/
-   - https://subhajit054.github.io/privacy.html
-   - https://subhajit054.github.io/terms.html
-   - https://subhajit054.github.io/sitemap.xml
-   - https://subhajit054.github.io/robots.txt
-6. In AdSense dashboard, click "I've added the code" or request review again (if prompted).
-
-# Quick git commands (if you use git locally)
-
-```bash
-git clone https://github.com/subhajit054/subhajit054.github.io.git
-cd subhajit054.github.io
-# create files (paste content)
-# git add .
-git add index.html privacy.html terms.html sitemap.xml robots.txt ads.txt
-git commit -m "Add homepage, privacy, terms, sitemap, robots, ads.txt for AdSense approval"
-git push origin main
-```
-
----
-
-# Final notes
-- I used your confirmed publisher ID `pub-7253912036541448` and name `Subhajit Sen` in the pages.
-- After you deploy, tell me the root URL is live and I will run a quick checklist and guide you to re-request AdSense review.
-
-Tell me when you've pushed the files (or say "I pushed the files") and I will check the site for you.
